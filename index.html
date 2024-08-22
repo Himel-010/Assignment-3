@@ -8,13 +8,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a8369dec78.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
-                primary : 'rgb(182, 140, 90)',
+                primary : 'rgb(171, 239, 95)',
+                secondary : 'rgba(171, 239, 95, 0.5)',
               }
             }
           }
@@ -23,15 +25,79 @@
       
       <style>
         body{
-            font-family: "EB Garamond", serif;
+          font-family: "Manrope", sans-serif;
         }
       </style>
     <title>Assignemt 3</title>
 </head>
-<body>
+<body class=" bg-gray-100">
     <!-- header -->
-    <header class="container mx-auto">
-        
+    <header class="container mx-auto ">
+        <!-- navbar -->
+        <section class="mb-20 ">
+          <div class="navbar ">
+            <div class="navbar-start space-x-2">
+              <div class=" "><i class="fa-solid fa-arrow-right rounded-full p-2 bg-[#ABEF5F] -rotate-45"></i></div>
+              <a class=" text-3xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="font-bold" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+
+
+
+              <div class="hidden sm:flex items-center gap-5 ">
+                <i class="fa-solid fa-magnifying-glass rounded-full p-2 bg-white"></i>
+                <i class="fa-solid fa-cart-shopping rounded-full p-2 bg-white"></i>
+                <a class="btn bg-primary font-bold rounded-full">Book Consult <i class="fa-solid fa-arrow-right rounded-full p-2 bg-[#1C1C1C] -rotate-45 text-white"></i></a>
+              </div>
+  
+              <!-- hamburger -->
+              <div class="rounded-full p-1">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars rounded-full p-2 bg-white"></i>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Hero Banner section -->
+         <section class="pb-28">
+          
+          
+            <div class="">
+              <img class="mx-auto" src="assets/banner.png" alt="">
+            </div>
+            
+              <div class="w-9/12 mx-auto text-center ">
+                <h1 class="text-5xl font-bold">A barn house of this design  has a striking appearance</h1>
+                <p class="py-6">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="btn bg-secondary font-bold rounded-full">Get Started <i class="fa-solid fa-arrow-right rounded-full p-2 bg-[#ABEF5F] -rotate-45 text-black "></i></button>
+              </div>
+            
+          
+         </section>
     </header>
     <!-- MAIN -->
     <main>
